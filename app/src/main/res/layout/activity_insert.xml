@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InsertActivity">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewFoto"
+            android:layout_width="242dip"
+            android:layout_height="72dip"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/buttonCamara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageViewFoto"
+            android:text="@string/button_imagen"
+            android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="436dp"
+        android:layout_below="@+id/RelativeLayoutImage">
+        <TableRow>
+            <TextView
+                android:id="@+id/TextViewPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonCamara"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="@string/precio"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/EditTextPrecio"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonCamara"
+                android:layout_marginTop="-13dp"
+                android:layout_toEndOf="@+id/TextViewPrecio"
+                android:hint="@string/etPrecio"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+        </TableRow>
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="@string/nombre"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/EditTextNombre"
+                android:layout_width="173dp"
+                android:layout_height="match_parent"
+                android:hint="@string/etNombre"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="@string/descripcion"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/EditTextDescripcion"
+                android:layout_width="232dp"
+                android:layout_height="match_parent"
+                android:hint="@string/etDescripcion"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ButtonInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text="@string/button_ingresar"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Este archivo es el menú de la activity MainActivity, se ha definido que
+    debe tener una sola opción la cual está especificada en la etiqueta item-->
+    <item android:id="@+id/add" android:title="@string/add"/>
+
+</menu>
